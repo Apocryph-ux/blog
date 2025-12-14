@@ -1,0 +1,106 @@
+:root {
+    --font-headings: 'Lora', serif;
+    --font-main: 'Roboto', sans-serif;
+    
+    /* Цвета */
+    --color-bg: #f5f3f0; /* Теплый, почти белый фон */
+    --color-surface: #ffffff; /* Чистый белый для карточек */
+    --color-text-primary: #3a3a3a; /* Темный, мягкий серо-коричневый */
+    --color-text-secondary: #7a7a7a;
+    --color-accent-green: #4a6c52; /* Глубокий лесной зеленый */
+    --color-accent-terracotta: #d87c4a; /* Теплый терракотовый */
+    --color-border: #e0e0e0;
+
+    /* Другие стили */
+    --border-radius: 6px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    --transition-speed: 0.3s ease;
+}
+
+.container
+{
+    max-width: 360px;
+}
+
+.form-group
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.post-title {
+    font-family: var(--font-headings);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: var(--color-text-primary);
+}
+
+/* Формы */
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin: 5px;
+    color: var(--color-text-primary);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    background: #fff;
+    color: var(--color-text-primary);
+    box-sizing: border-box;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-accent-green);
+    box-shadow: 0 0 0 3px rgba(74, 108, 82, 0.2);
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.btn-primary {
+    background-color: var(--color-accent-green);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #38523f; /* Чуть темнее при наведении */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-danger {
+    background-color: #c94a53;
+    color: #fff;
+}
+.btn-danger:hover {
+    background-color: #a13b42;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: var(--color-text-primary);
+}
+.btn-secondary:hover {
+    background-color: #c7c7c7;
+    transform: translateY(-2px);
+}

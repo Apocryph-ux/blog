@@ -1,0 +1,112 @@
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: inherit;
+}
+.container1
+{
+    width: 360px;
+}
+
+
+
+.category-item {
+    background: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.category-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #ECECEC;
+    color: #808080;
+}
+
+.category-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.category-item p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    font: inter;
+    color: #353535;
+}
+
+
+/* Детальная страница статьи */
+.single-article-content {
+    padding: 20px;
+}
+
+.article-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.article-date {
+    font-size: 11px;
+    color: #808080;
+    margin-bottom: 15px;
+}
+
+.article-text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.article-source {
+    font-size: 11px;
+    color: #808080;
+    margin-bottom: 15px;
+}
+
+
+
+.article-tags {
+    margin-top: 20px;
+}
+
+.tag-button {
+    display: inline-block;
+    background: #f0f2f5;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 10px;
+    color: #666;
+}
+
+.tab.orange{
+    background-color: #FF7F24;
+}
